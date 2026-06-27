@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cine Max Videos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      color: #00ccff;
+      text-align: center;
+      padding: 20px;
+      font-size: 36px;
+    }
+    h2 {
+      color: #fff;
+      text-align: center;
+      font-size: 16px;
+      margin-top: -10px;
+      margin-bottom: 20px;
+    }
+    .catalogo {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px;
+    }
+    .filme {
+      margin: 10px;
+      text-align: center;
+    }
+    .filme img {
+      width: 200px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .filme img:hover {
+      transform: scale(1.05);
+    }
+    #player {
+      display: none;
+      width: 100%;
+      text-align: center;
+    }
+    #player iframe {
+      width: 100%;
+      aspect-ratio: 16/9;
+      height: auto;
+      border: none;
+      border-radius: 12px;
+    }
+    footer {
+      text-align: center;
+      color: #fff;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cine Max Videos</h1>
+  <h2>O melhor site de streaming de Filmes e Séries da internet.</h2>
+
+  <!-- Catálogo -->
+  <div class="catalogo" id="catalogo">
+
+    <!-- CSI Cyber -->
+    <div class="filme">
+      <a href="javascript:void(0)" onclick="abrirCSI();">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsD23HL48CU9pToItnttSE6ABYiAF-lI87PO564f_U4Ykj0tHCAeA_R56liuFZmuzddDvICEYuLvRBC9mlREpkbmmmwOdWz3HcT1iFow_NIRWnlxRNjEQFwecEYIyPWHe3ZzTrnrirEtafvM5C0XhAG6pjZugn0V5ULoDMIWZpSMYOB3uFl-V4bSHFl3I/s320/CSI%20Cyber%20Capa%20400x600.jpg" alt="CSI Cyber"/>
+      </a>
+    </div>
+
+    <!-- Chapolin -->
+    <div class="filme">
+      <a href="javascript:void(0)" onclick="abrirChapolin();">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhudn1zGFpJQU_EpEVvtB2oriYximTZfnnrnVOBef3wM7bUqKzm6C3ZzAwPl9sup9aT4rnBnScBRdVWHDN-nWZyKULthaICwYdgBeic3K7tLicnqA4haOsIv0zP5A5vPkzAqsmU8-5aHAzwpD4vQCeb2UGxCBmJ3_oIfLMx5MKEn_CosLQZs1md-JNc6wc/s320/Chapolin%20400x600.jpg" alt="Chapolin"/>
+      </a>
+    </div>
+
+    <!-- Chaves -->
+    <div class="filme">
+      <a href="javascript:void(0)" onclick="abrirChaves();">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMzfEffspcP87UnbMcFAsFvTgBJ5I90C9QAKKQkucRAMFlmKW5tahnk1HGAZUiuu29wJFJGo1jKARVqzDRazMx1xYDLDKYPlkPL4lU7y90OkrDgcKhkmWmRPCm0iodEwu9HbNpwj3ciXAoQmpzCq6Sj6iHiXgt0jC45YVRDN1UmLt-IM0X-D7VeXUVtlo/s320/chaves%20400x600.jpg" alt="Chaves"/>
+      </a>
+    </div>
+
+    <!-- CSI Miami -->
+    <div class="filme">
+      <a href="javascript:void(0)" onclick="abrirCSIMiami();">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQQWiFDtXlCDG_acTplHYVNaUqWB7o2qwrp8F-LcMj8_w_qO-VgwOT2XAryTGnw5CF8js5PTWDJzuYMy6NLdpRw3rxsJ-bkFVYpqFxMno-JusB84lOnzavxnH6ErhAwfUI0PrEir47_ichO7nXE3u74u9lVbC7bh3mHSlb9filLADcZbJxs6P6g4ATN98/s320/csi%20miami%202%20400x600.jpg" alt="CSI Miami"/>
+      </a>
+    </div>
+
+    <!-- Invasores 2014 -->
+    <div class="filme">
+      <a href="javascript:void(0)" onclick="abrirInvasores();">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-QeZSHCahatfCbAbzOTLfJQAdgZxIx_jwy5J03RcNjZn-0gqSXRPD3Yw5w3Jd_iriSRArHvPAC5MsKpzV0pPzLJ7Fpxj-f-x6YcubQqCbKr_agTjyhwUpbwypey5SzF79YSU4qck9p3f_-P35-3u40NqTWT7qOhPiQSyCOHTOn6cx5fxX3Ic4XMR8LGk/s320/Hackers%20nenhum%20sistema%20esta%20a%20salvo%20400x600.jpg" alt="Invasores 2014"/>
+      </a>
+    </div>
+
+    <!-- Star Wars IV -->
+    <div class="filme">
+      <a href="javascript:void(0)" onclick="abrirStarWarsIV();">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjd6ErrnxAt0PaGbqfUtchvPe6tbIWVeU-8YA3HlUbw_tAOGxM7lRwsjHHonlQH-D6rSslpFWsPMM04ZqgH7Cj7lzhMt48vGBb8arCMfkspd8PoMSIbAx7MlPS5qG8aFxbbVjV8umqvPpjMjggDvBkB9OX0viYITd_sKgglw6p1ZoPvtjCM2BcA7wcHJg/s320/guerra-nas-estrelas-episodio-iv-uma-nova-esperanca%20400x600.jpg" alt="Star Wars IV"/>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Player -->
+  <div id="player"></div>
+
+  <footer>
+    Copyright - Cavalcante Tecnology
+  </footer>
+
+  <script>
+    function abrirCSI() {
+      document.getElementById('catalogo').style.display='none';
+      document.getElementById('player').style.display='block';
+      document.getElementById('player').innerHTML = `
+        <iframe src="https://warezcdn.lat/serie/61811/1/1?cfv=SEU_TOKEN_VALIDO"
+                allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
+                allowfullscreen frameborder="0" scrolling="no"
+                style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
+        </iframe>`;
+    }
+
+        function abrirChapolin() {
+      document.getElementById('catalogo').style.display='none';
+      document.getElementById('player').style.display='block';
+      document.getElementById('player').innerHTML = `
+        <iframe src="https://warezcdn.lat/serie/13023/1/1?cfv=SEU_TOKEN_VALIDO"
+                allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
+                allowfullscreen frameborder="0" scrolling="no"
+                style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
+        </iframe>`;
+    }
+
+    function abrirChaves() {
+      document.getElementById('catalogo').style.display='none';
+      document.getElementById('player').style.display='block';
+      document.getElementById('player').innerHTML = `
+        <iframe src="https://warezcdn.lat/serie/47/1/1?cfv=SEU_TOKEN_VALIDO"
+                allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
+                allowfullscreen frameborder="0" scrolling="no"
+                style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
+        </iframe>`;
+    }
+
+    function abrirCSIMiami() {
+      document.getElementById('catalogo').style.display='none';
+      document.getElementById('player').style.display='block';
+      document.getElementById('player').innerHTML = `
+        <iframe src="https://warezcdn.lat/serie/1620/1/1?cfv=SEU_TOKEN_VALIDO"
+                allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
+                allowfullscreen frameborder="0" scrolling="no"
+                style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
+        </iframe>`;
+    }
+
+    function abrirInvasores() {
+      document.getElementById('catalogo').style.display='none';
+      document.getElementById('player').style.display='block';
+      document.getElementById('player').innerHTML = `
+        <iframe src="https://warezcdn.lat/filme/284427?cfv=SEU_TOKEN_VALIDO"
+                allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
+                allowfullscreen frameborder="0" scrolling="no"
+                style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
+        </iframe>`;
+    }
+
+    function abrirStarWarsIV() {
+      document.getElementById('catalogo').style.display='none';
+      document.getElementById('player').style.display='block';
+      document.getElementById('player').innerHTML = `
+        <iframe src="https://warezcdn.lat/filme/11?cfv=SEU_TOKEN_VALIDO"
+                allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
+                allowfullscreen frameborder="0" scrolling="no"
+                style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
+        </iframe>`;
+    }
+  </script>
+</body>
+</html>
