@@ -19,12 +19,25 @@
       margin-top: -10px;
       margin-bottom: 20px;
     }
+
+
+
+
+
     .catalogo {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin: 20px;
-    }
+  display: flex;
+  flex-wrap: nowrap;       /* impede que as capas quebrem para baixo */
+  overflow-x: hidden;      /* esconde capas fora da área visível */
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 10px;
+}
+
+
+
+
+
+
     .filme {
       margin: 10px;
       text-align: center;
