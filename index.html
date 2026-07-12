@@ -15,6 +15,14 @@
   <h1>Cine Max Videos</h1>
   <h2>O melhor site de Filmes e Séries da internet.</h2>
 
+  <!-- Botões de navegação -->
+<div class="menu-botoes">
+  <button onclick="voltarInicio()">Início</button>
+  <button onclick="abrirSobre()">Sobre</button>
+  <button onclick="abrirContato()">Contato</button>
+</div>
+
+
   <!-- Catálogo -->
   <div class="catalogo" id="catalogo">
 
@@ -249,6 +257,34 @@
                 style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
         </iframe>`;
     }
+
+
+    function voltarInicio() {
+  // Recarrega a página para voltar ao catálogo
+  location.reload();
+}
+
+function abrirSobre() {
+  document.getElementById('catalogo').style.display='none';
+  document.getElementById('player').style.display='block';
+  document.getElementById('player').innerHTML = `
+    <div class="sobre">
+      <h2>Sobre o Cine Max Videos</h2>
+      <p>O melhor site de Filmes e Séries da internet. Um espaço dedicado a trazer os melhores conteúdos, especialmente para o público geek e apaixonado por tecnologia.</p>
+      <p>Nosso objetivo é oferecer acesso gratuito, sustentado por doações voluntárias e principalmente por receita proveniente de anúncios e publicidade paga em pequenos banners na página principal. Com esses fundos, buscamos manter o site ativo e disponível para todos.</p>
+      <p>Se desejar apoiar diretamente, você pode contribuir com doações voluntárias através do seguinte endereço Bitcoin:</p>
+      <p><strong>Endereço BTC:</strong> 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa</p>
+    </div>
+  `;
+}
+
+function abrirContato() {
+  // Redireciona para o Instagram
+  window.location.href = "https://www.instagram.com/";
+}
+
+    
+    
   </script>
 </body>
 </html>
