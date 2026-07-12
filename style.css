@@ -81,3 +81,26 @@
 .menu-botoes button:hover {
   background-color: #08304f; /* tom mais escuro no hover */
 }
+
+
+
+
+
+.banner {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.banner-text {
+  margin-top: 5px;
+  font-size: 12px;       /* pequeno */
+  color: #ffffff;        /* branco */
+  text-align: center;    /* centralizado */
+}
