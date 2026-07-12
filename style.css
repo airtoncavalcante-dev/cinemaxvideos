@@ -104,3 +104,53 @@
   color: #ffffff;        /* branco */
   text-align: center;    /* centralizado */
 }
+
+
+
+
+
+
+
+.barra-secao {
+  background-color: #0a2a43; /* mesma cor dos botões */
+  color: #ffffff;           /* texto branco */
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 0;
+  margin: 20px 0 10px 0;
+  border-radius: 6px;
+}
+
+.carrossel {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.catalogo {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 10px;
+}
+
+.catalogo::-webkit-scrollbar {
+  display: none; /* esconde a barra de rolagem */
+}
+
+.seta {
+  background-color: #0a2a43;
+  color: #ffffff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.seta:hover {
+  background-color: #08304f;
+}
