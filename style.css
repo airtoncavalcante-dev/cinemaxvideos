@@ -142,13 +142,18 @@
 }
 
 
+
 .catalogo {
   display: flex;
-  overflow-x: auto;
+  flex-wrap: nowrap;   /* impede que as capas quebrem para baixo */
+  overflow-x: hidden;  /* esconde capas fora da área visível */
   scroll-behavior: smooth;
   gap: 20px;
   padding: 10px;
 }
+
+
+
 
 .catalogo::-webkit-scrollbar {
   display: none; /* esconde a barra de rolagem */
