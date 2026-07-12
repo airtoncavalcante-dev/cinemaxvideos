@@ -36,12 +36,14 @@
 
 
 
+.filme {
+  flex: 0 0 auto;         /* impede que os itens quebrem para baixo */
+  margin: 0 10px;         /* espaçamento entre capas */
+}
 
 
-    .filme {
-      margin: 10px;
-      text-align: center;
-    }
+
+
     .filme img {
       width: 200px;
       border-radius: 8px;
@@ -144,12 +146,9 @@
 
 
 .catalogo {
-  display: flex;
-  flex-wrap: nowrap;   /* impede que as capas quebrem para baixo */
-  overflow-x: hidden;  /* esconde capas fora da área visível */
+  display: flex;          /* coloca os itens lado a lado */
+  overflow-x: auto;       /* permite rolagem horizontal */
   scroll-behavior: smooth;
-  gap: 20px;
-  padding: 10px;
 }
 
 
