@@ -68,7 +68,7 @@
 
 .menu-botoes button {
   background-color: #0a2a43; /* azul escuro diferente do fundo */
-  color: #4da6ff; /* azul claro igual ao título */
+  color: #ffffff; /* cor dos textos dos botoes inicio sobre e contao em branco */
   border: none;
   padding: 10px 20px;
   margin: 0 10px;
