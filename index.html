@@ -35,6 +35,9 @@
 
 <!-- Barra Filmes -->
 <div class="barra-secao" id="barra-filmes">Filmes</div>
+<div class="carrossel">
+  <button class="seta esquerda" onclick="rolarCarrossel('filmes', -1)">&#10094;</button>
+  <div class="catalogo" id="catalogo-filmes">
 
 
 
@@ -195,16 +198,30 @@
         </iframe>`;
     }
 
+    
+
     function abrirInvasores() {
-      document.getElementById('catalogo').style.display='none';
-      document.getElementById('player').style.display='block';
-      document.getElementById('player').innerHTML = `
-        <iframe src="https://warezcdn.lat/filme/284427?cfv=SEU_TOKEN_VALIDO"
-                allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
-                allowfullscreen frameborder="0" scrolling="no"
-                style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
-        </iframe>`;
-    }
+  // Esconde catálogos
+  document.getElementById('catalogo-filmes').style.display = 'none';
+  document.getElementById('catalogo-series').style.display = 'none';
+
+  // Esconde barras
+  document.getElementById('barra-filmes').style.display = 'none';
+  document.getElementById('barra-series').style.display = 'none';
+
+  // Mostra player
+  document.getElementById('player').style.display = 'block';
+  document.getElementById('player').innerHTML = `
+    <iframe src="https://www.tokyvideo.com/br/embed/695663"
+            allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
+            allowfullscreen frameborder="0" scrolling="no"
+            style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
+    </iframe>`;
+}
+
+    
+
+    
 
     function abrirTitanic() {
   document.getElementById('catalogo').style.display='none';
