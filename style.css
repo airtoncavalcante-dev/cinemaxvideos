@@ -63,12 +63,12 @@
 
 .menu-botoes {
   margin: 20px 0;
-  text-align: center;
+  text-align: center; /* garante centralização em qualquer tela */
 }
 
 .menu-botoes button {
-  background-color: #ea5467;
-  color: #fff;
+  background-color: #0a2a43; /* azul escuro diferente do fundo */
+  color: #4da6ff; /* azul claro igual ao título */
   border: none;
   padding: 10px 20px;
   margin: 0 10px;
@@ -79,15 +79,5 @@
 }
 
 .menu-botoes button:hover {
-  background-color: #c73d52;
-}
-
-.sobre {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: left;
-  color: #fff;
-  background-color: #1c1c1c;
-  padding: 20px;
-  border-radius: 10px;
+  background-color: #08304f; /* tom mais escuro no hover */
 }
