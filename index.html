@@ -53,22 +53,14 @@
       </a>
     </div>
 
-        <!-- Titanic 1997 -->
-    <div class="filme">
-  <img src="images/Titanic 1997 Capa 400x600.jpg" alt="Titanic (1997)">
-  <h3>Titanic (1997)</h3>
-  <div class="player-wrapper">
-    <iframe src="https://www.tokyvideo.com/br/embed/695663" 
-            frameborder="0" 
-            scrolling="no" 
-            allowfullscreen 
-            webkitallowfullscreen 
-            mozallowfullscreen 
-            allowtransparency 
-            style="width: 100%; aspect-ratio: 16/9; display: block; border: 0;">
-    </iframe>
-  </div>
+
+    <!-- Titanic 1997 -->
+<div class="filme">
+  <a href="javascript:void(0)" onclick="abrirTitanic();">
+    <img src="images/Titanic 1997 Capa 400x600.jpg" alt="Titanic (1997)"/>
+  </a>
 </div>
+
 
 
     <!-- Star Wars IV -->
@@ -142,6 +134,18 @@
                 style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
         </iframe>`;
     }
+
+    function abrirTitanic() {
+  document.getElementById('catalogo').style.display='none';
+  document.getElementById('player').style.display='block';
+  document.getElementById('player').innerHTML = `
+    <iframe src="https://www.tokyvideo.com/br/embed/695663"
+            allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
+            allowfullscreen frameborder="0" scrolling="no"
+            style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
+    </iframe>`;
+}
+
 
     function abrirStarWarsIV() {
       document.getElementById('catalogo').style.display='none';
