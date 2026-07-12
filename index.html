@@ -166,38 +166,71 @@
 
     
 
-        function abrirChapolin() {
-      document.getElementById('catalogo').style.display='none';
-      document.getElementById('player').style.display='block';
-      document.getElementById('player').innerHTML = `
-        <iframe src="https://warezcdn.lat/serie/13023/1/1?cfv=SEU_TOKEN_VALIDO"
-                allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
-                allowfullscreen frameborder="0" scrolling="no"
-                style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
-        </iframe>`;
-    }
+       function abrirChapolin() {
+  // Esconde catálogos
+  document.getElementById('catalogo-filmes').style.display = 'none';
+  document.getElementById('catalogo-series').style.display = 'none';
 
-    function abrirChaves() {
-      document.getElementById('catalogo').style.display='none';
-      document.getElementById('player').style.display='block';
-      document.getElementById('player').innerHTML = `
-        <iframe src="https://warezcdn.lat/serie/47/1/1?cfv=SEU_TOKEN_VALIDO"
-                allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
-                allowfullscreen frameborder="0" scrolling="no"
-                style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
-        </iframe>`;
-    }
+  // Esconde barras
+  document.getElementById('barra-filmes').style.display = 'none';
+  document.getElementById('barra-series').style.display = 'none';
 
-    function abrirCSIMiami() {
-      document.getElementById('catalogo').style.display='none';
-      document.getElementById('player').style.display='block';
-      document.getElementById('player').innerHTML = `
-        <iframe src="https://warezcdn.lat/serie/1620/1/1?cfv=SEU_TOKEN_VALIDO"
-                allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
-                allowfullscreen frameborder="0" scrolling="no"
-                style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
-        </iframe>`;
-    }
+  // Mostra player
+  document.getElementById('player').style.display = 'block';
+  document.getElementById('player').innerHTML = `
+    <iframe src="https://warezcdn.lat/serie/13023/1/1?cfv=SEU_TOKEN_VALIDO"
+            allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
+            allowfullscreen frameborder="0" scrolling="no"
+            style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
+    </iframe>`;
+}
+
+
+
+
+    
+   function abrirChaves() {
+  // Esconde catálogos
+  document.getElementById('catalogo-filmes').style.display = 'none';
+  document.getElementById('catalogo-series').style.display = 'none';
+
+  // Esconde barras
+  document.getElementById('barra-filmes').style.display = 'none';
+  document.getElementById('barra-series').style.display = 'none';
+
+  // Mostra player
+  document.getElementById('player').style.display = 'block';
+  document.getElementById('player').innerHTML = `
+    <iframe src="https://warezcdn.lat/serie/47/1/1?cfv=SEU_TOKEN_VALIDO"
+            allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
+            allowfullscreen frameborder="0" scrolling="no"
+            style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
+    </iframe>`;
+}
+
+
+
+
+    
+   function abrirCSIMiami() {
+  // Esconde catálogos
+  document.getElementById('catalogo-filmes').style.display = 'none';
+  document.getElementById('catalogo-series').style.display = 'none';
+
+  // Esconde barras
+  document.getElementById('barra-filmes').style.display = 'none';
+  document.getElementById('barra-series').style.display = 'none';
+
+  // Mostra player
+  document.getElementById('player').style.display = 'block';
+  document.getElementById('player').innerHTML = `
+    <iframe src="https://warezcdn.lat/serie/1620/1/1?cfv=SEU_TOKEN_VALIDO"
+            allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
+            allowfullscreen frameborder="0" scrolling="no"
+            style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
+    </iframe>`;
+}
+
 
     
 
@@ -226,9 +259,17 @@
 
     
 
-    function abrirTitanic() {
-  document.getElementById('catalogo').style.display='none';
-  document.getElementById('player').style.display='block';
+   function abrirTitanic() {
+  // Esconde catálogos
+  document.getElementById('catalogo-filmes').style.display = 'none';
+  document.getElementById('catalogo-series').style.display = 'none';
+
+  // Esconde barras
+  document.getElementById('barra-filmes').style.display = 'none';
+  document.getElementById('barra-series').style.display = 'none';
+
+  // Mostra player
+  document.getElementById('player').style.display = 'block';
   document.getElementById('player').innerHTML = `
     <iframe src="https://www.tokyvideo.com/br/embed/695663"
             allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
@@ -238,62 +279,88 @@
 }
 
 
+    
+
     function abrirMatrix() {
-  document.getElementById('catalogo').style.display='none';
-  document.getElementById('player').style.display='block';
+  // Esconde catálogos
+  document.getElementById('catalogo-filmes').style.display = 'none';
+  document.getElementById('catalogo-series').style.display = 'none';
+
+  // Esconde barras
+  document.getElementById('barra-filmes').style.display = 'none';
+  document.getElementById('barra-series').style.display = 'none';
+
+  // Mostra player
+  document.getElementById('player').style.display = 'block';
   document.getElementById('player').innerHTML = `
     <iframe src="https://www.tokyvideo.com/br/embed/640565"
-            frameborder="0"
-            scrolling="no"
-            allowfullscreen
-            webkitallowfullscreen
-            mozallowfullscreen
-            allowtransparency
+            allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
+            allowfullscreen frameborder="0" scrolling="no"
             style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
     </iframe>`;
 }
 
-    function abrirMatrixReloaded() {
-  document.getElementById('catalogo').style.display='none';
-  document.getElementById('player').style.display='block';
+
+    
+
+   function abrirMatrixReloaded() {
+  // Esconde catálogos
+  document.getElementById('catalogo-filmes').style.display = 'none';
+  document.getElementById('catalogo-series').style.display = 'none';
+
+  // Esconde barras
+  document.getElementById('barra-filmes').style.display = 'none';
+  document.getElementById('barra-series').style.display = 'none';
+
+  // Mostra player
+  document.getElementById('player').style.display = 'block';
   document.getElementById('player').innerHTML = `
     <iframe src="https://www.tokyvideo.com/br/embed/640497"
-            frameborder="0"
-            scrolling="no"
-            allowfullscreen
-            webkitallowfullscreen
-            mozallowfullscreen
-            allowtransparency
+            allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
+            allowfullscreen frameborder="0" scrolling="no"
             style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
     </iframe>`;
 }
 
-    function abrirMatrixRevolutions() {
-  document.getElementById('catalogo').style.display='none';
-  document.getElementById('player').style.display='block';
+
+    
+  function abrirMatrixRevolutions() {
+  // Esconde catálogos
+  document.getElementById('catalogo-filmes').style.display = 'none';
+  document.getElementById('catalogo-series').style.display = 'none';
+
+  // Esconde barras
+  document.getElementById('barra-filmes').style.display = 'none';
+  document.getElementById('barra-series').style.display = 'none';
+
+  // Mostra player
+  document.getElementById('player').style.display = 'block';
   document.getElementById('player').innerHTML = `
     <iframe src="https://www.tokyvideo.com/br/embed/754363"
-            frameborder="0"
-            scrolling="no"
-            allowfullscreen
-            webkitallowfullscreen
-            mozallowfullscreen
-            allowtransparency
+            allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
+            allowfullscreen frameborder="0" scrolling="no"
             style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
     </iframe>`;
 }
 
-    function abrirMatrixResurrections() {
-  document.getElementById('catalogo').style.display='none';
-  document.getElementById('player').style.display='block';
+
+
+    
+   function abrirMatrixResurrections() {
+  // Esconde catálogos
+  document.getElementById('catalogo-filmes').style.display = 'none';
+  document.getElementById('catalogo-series').style.display = 'none';
+
+  // Esconde barras
+  document.getElementById('barra-filmes').style.display = 'none';
+  document.getElementById('barra-series').style.display = 'none';
+
+  // Mostra player
+  document.getElementById('player').style.display = 'block';
   document.getElementById('player').innerHTML = `
     <iframe src="https://www.tokyvideo.com/br/embed/892540"
-            frameborder="0"
-            scrolling="no"
-            allowfullscreen
-            webkitallowfullscreen
-            mozallowfullscreen
-            allowtransparency
+            allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
+            allowfullscreen frameborder="0" scrolling="no"
             style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
     </iframe>`;
 }
@@ -301,16 +368,26 @@
 
 
 
-    function abrirStarWarsIV() {
-      document.getElementById('catalogo').style.display='none';
-      document.getElementById('player').style.display='block';
-      document.getElementById('player').innerHTML = `
-        <iframe src="https://warezcdn.lat/filme/11?cfv=SEU_TOKEN_VALIDO"
-                allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
-                allowfullscreen frameborder="0" scrolling="no"
-                style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
-        </iframe>`;
-    }
+
+   function abrirStarWarsIV() {
+  // Esconde catálogos
+  document.getElementById('catalogo-filmes').style.display = 'none';
+  document.getElementById('catalogo-series').style.display = 'none';
+
+  // Esconde barras
+  document.getElementById('barra-filmes').style.display = 'none';
+  document.getElementById('barra-series').style.display = 'none';
+
+  // Mostra player
+  document.getElementById('player').style.display = 'block';
+  document.getElementById('player').innerHTML = `
+    <iframe src="https://warezcdn.lat/filme/11?cfv=SEU_TOKEN_VALIDO"
+            allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
+            allowfullscreen frameborder="0" scrolling="no"
+            style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
+    </iframe>`;
+}
+
 
 
   function voltarInicio() {
