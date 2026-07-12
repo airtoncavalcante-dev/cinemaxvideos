@@ -306,6 +306,17 @@ function abrirContato() {
 }
 
 
+
+    function rolarCarrossel(tipo, direcao) {
+  const catalogo = document.getElementById('catalogo-' + tipo);
+  const largura = catalogo.clientWidth;
+  catalogo.scrollBy({
+    left: direcao * largura,
+    behavior: 'smooth'
+  });
+}
+
+    
     
     
   </script>
