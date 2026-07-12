@@ -69,6 +69,28 @@
   </a>
 </div>
 
+    <!-- Matrix Reloaded (2003) -->
+<div class="filme">
+  <a href="javascript:void(0)" onclick="abrirMatrixReloaded();">
+    <img src="Matrix Reloaded (2003) Capa 400x600.jpg" alt="Matrix Reloaded (2003)"/>
+  </a>
+</div>
+
+    <!-- Matrix Revolutions (2003) -->
+<div class="filme">
+  <a href="javascript:void(0)" onclick="abrirMatrixRevolutions();">
+    <img src="Matrix Revolutions (2003) Capa 400x600.jpg" alt="Matrix Revolutions (2003)"/>
+  </a>
+</div>
+
+    <!-- Matrix Resurrections (2021) -->
+<div class="filme">
+  <a href="javascript:void(0)" onclick="abrirMatrixResurrections();">
+    <img src="The_Matrix_Resurrections 400x600.png" alt="Matrix Resurrections (2021)"/>
+  </a>
+</div>
+
+
 
     <!-- Star Wars IV -->
     <div class="filme">
@@ -168,6 +190,52 @@
             style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
     </iframe>`;
 }
+
+    function abrirMatrixReloaded() {
+  document.getElementById('catalogo').style.display='none';
+  document.getElementById('player').style.display='block';
+  document.getElementById('player').innerHTML = `
+    <iframe src="https://www.tokyvideo.com/br/embed/640497"
+            frameborder="0"
+            scrolling="no"
+            allowfullscreen
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowtransparency
+            style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
+    </iframe>`;
+}
+
+    function abrirMatrixRevolutions() {
+  document.getElementById('catalogo').style.display='none';
+  document.getElementById('player').style.display='block';
+  document.getElementById('player').innerHTML = `
+    <iframe src="https://www.tokyvideo.com/br/embed/754363"
+            frameborder="0"
+            scrolling="no"
+            allowfullscreen
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowtransparency
+            style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
+    </iframe>`;
+}
+
+    function abrirMatrixResurrections() {
+  document.getElementById('catalogo').style.display='none';
+  document.getElementById('player').style.display='block';
+  document.getElementById('player').innerHTML = `
+    <iframe src="https://www.tokyvideo.com/br/embed/892540"
+            frameborder="0"
+            scrolling="no"
+            allowfullscreen
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowtransparency
+            style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
+    </iframe>`;
+}
+
 
 
 
