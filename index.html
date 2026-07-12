@@ -36,17 +36,6 @@
 <!-- Barra Filmes -->
 <div class="barra-secao" id="barra-filmes">Filmes</div>
 
-<!-- Barra Séries -->
-<div class="barra-secao" id="barra-series">Séries</div>
-
-
-
-  
-<!-- Barra Filmes -->
-<div class="barra-secao">Filmes</div>
-<div class="carrossel">
-  <button class="seta esquerda" onclick="rolarCarrossel('filmes', -1)">&#10094;</button>
-  <div class="catalogo" id="catalogo-filmes">
 
     <!-- Invasores 2014 -->
     <div class="filme">
@@ -102,10 +91,7 @@
 </div>
 
 <!-- Barra Séries -->
-<div class="barra-secao">Séries</div>
-<div class="carrossel">
-  <button class="seta esquerda" onclick="rolarCarrossel('series', -1)">&#10094;</button>
-  <div class="catalogo" id="catalogo-series">
+<div class="barra-secao" id="barra-series">Séries</div>
 
     <!-- CSI Cyber -->
     <div class="filme">
@@ -151,7 +137,7 @@
 
   <script>
     
-    function abrirCSI() {
+   function abrirCSI() {
   // Esconde catálogos
   document.getElementById('catalogo-filmes').style.display = 'none';
   document.getElementById('catalogo-series').style.display = 'none';
@@ -169,6 +155,7 @@
             style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
     </iframe>`;
 }
+
 
 
 
