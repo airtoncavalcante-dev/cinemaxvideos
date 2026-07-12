@@ -141,6 +141,7 @@
   position: relative;
 }
 
+
 .catalogo {
   display: flex;
   overflow-x: auto;
@@ -163,7 +164,6 @@
   border-radius: 50%;
   transition: background-color 0.3s;
 }
-
 .seta:hover {
   background-color: #08304f;
 }
