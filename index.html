@@ -123,6 +123,14 @@
 </div>
 
 
+    <!-- À Espera de um Milagre (2000) -->
+<div class="filme">
+  <a href="javascript:void(0)" onclick="abrirMilagre();">
+    <img src="https://raw.githubusercontent.com/airtoncavalcante-dev/cinemaxvideos/main/%C3%80%20Espera%20de%20um%20Milagre%20400x600.png" alt="À Espera de um Milagre"/>
+  </a>
+</div>
+
+
 
 
         <!-- Titanic 1997 -->
@@ -518,6 +526,31 @@ document.querySelectorAll('.seta').forEach(el => el.style.display = 'none');
   document.getElementById('player').style.display = 'block';
   document.getElementById('player').innerHTML = `
     <iframe src="https://www.tokyvideo.com/br/embed/892540"
+            allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
+            allowfullscreen frameborder="0" scrolling="no"
+            style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
+    </iframe>`;
+}
+
+
+
+
+    function abrirMilagre() {
+  // Esconde catálogos
+  document.getElementById('catalogo-filmes').style.display = 'none';
+  document.getElementById('catalogo-series').style.display = 'none';
+
+  // Esconde barras
+  document.getElementById('barra-filmes').style.display = 'none';
+  document.getElementById('barra-series').style.display = 'none';
+
+  // Esconde setas
+  document.querySelectorAll('.seta').forEach(el => el.style.display = 'none');
+
+  // Mostra player
+  document.getElementById('player').style.display = 'block';
+  document.getElementById('player').innerHTML = `
+    <iframe src="https://www.tokyvideo.com/br/embed/721598"
             allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
             allowfullscreen frameborder="0" scrolling="no"
             style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
