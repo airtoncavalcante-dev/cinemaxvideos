@@ -487,23 +487,41 @@ document.querySelectorAll('.seta').forEach(el => el.style.display = 'none');
 }
 
 function abrirSobre() {
-  document.getElementById('catalogo').style.display='none';
-  document.getElementById('player').style.display='block';
+  // Esconde catálogos e barras
+  document.getElementById('catalogo-filmes').style.display = 'none';
+  document.getElementById('catalogo-series').style.display = 'none';
+  document.getElementById('barra-filmes').style.display = 'none';
+  document.getElementById('barra-series').style.display = 'none';
+  document.querySelectorAll('.seta').forEach(el => el.style.display = 'none');
+
+  // Mostra player com texto "Sobre"
+  document.getElementById('player').style.display = 'block';
   document.getElementById('player').innerHTML = `
-    <div class="sobre">
+    <div style="padding:20px; font-size:18px; text-align:center;">
       <h2>Sobre o Cine Max Videos</h2>
-      <p>O melhor site de Filmes e Séries da internet. Um espaço dedicado a trazer os melhores conteúdos, especialmente para o público geek e apaixonado por tecnologia.</p>
-      <p>Nosso objetivo é oferecer acesso gratuito, sustentado por doações voluntárias e principalmente por receita proveniente de anúncios e publicidade paga em pequenos banners na página principal. Com esses fundos, buscamos manter o site ativo e disponível para todos.</p>
-      <p>Se desejar apoiar diretamente, você pode contribuir com doações voluntárias através do seguinte endereço Bitcoin:</p>
-      <p><strong>Endereço BTC:</strong> 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa</p>
-    </div>
-  `;
+      <p>O Cine Max Videos é um projeto dedicado a reunir os melhores filmes e séries em um só lugar, com uma experiência simples e prática para você assistir online.</p>
+    </div>`;
 }
 
+
 function abrirContato() {
-  // Abre o Instagram em nova aba (desktop) ou no app (celular)
-  window.open("https://www.instagram.com/", "_blank");
+  // Esconde catálogos e barras
+  document.getElementById('catalogo-filmes').style.display = 'none';
+  document.getElementById('catalogo-series').style.display = 'none';
+  document.getElementById('barra-filmes').style.display = 'none';
+  document.getElementById('barra-series').style.display = 'none';
+  document.querySelectorAll('.seta').forEach(el => el.style.display = 'none');
+
+  // Mostra player com email de contato
+  document.getElementById('player').style.display = 'block';
+  document.getElementById('player').innerHTML = `
+    <div style="padding:20px; font-size:18px; text-align:center;">
+      <h2>Contato</h2>
+      <p>Entre em contato pelo e-mail:</p>
+      <p><strong>cinemaxvideos@proton.me</strong></p>
+    </div>`;
 }
+
 
 
 
