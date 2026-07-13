@@ -66,6 +66,15 @@
 </div>
 
 
+    <!-- Piratas do Vale do Silício -->
+<div class="filme">
+  <a href="javascript:void(0)" onclick="abrirPiratasSilicio();">
+    <img src="https://raw.githubusercontent.com/airtoncavalcante-dev/cinemaxvideos/main/Piratas%20do%20vale%20do%20silicio%201999%20-%20400x600.png" alt="Piratas do Vale do Silício"/>
+  </a>
+</div>
+
+
+
     <!-- Matrix 1999 -->
     <div class="filme">
       <a href="javascript:void(0)" onclick="abrirMatrix();">
@@ -316,6 +325,30 @@ document.querySelectorAll('.seta').forEach(el => el.style.display = 'none');
   document.getElementById('player').style.display = 'block';
   document.getElementById('player').innerHTML = `
     <iframe src="https://www.tokyvideo.com/br/embed/801035"
+            allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
+            allowfullscreen frameborder="0" scrolling="no"
+            style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
+    </iframe>`;
+}
+
+
+
+    function abrirPiratasSilicio() {
+  // Esconde catálogos
+  document.getElementById('catalogo-filmes').style.display = 'none';
+  document.getElementById('catalogo-series').style.display = 'none';
+
+  // Esconde barras
+  document.getElementById('barra-filmes').style.display = 'none';
+  document.getElementById('barra-series').style.display = 'none';
+
+  // Esconde setas
+  document.querySelectorAll('.seta').forEach(el => el.style.display = 'none');
+
+  // Mostra player
+  document.getElementById('player').style.display = 'block';
+  document.getElementById('player').innerHTML = `
+    <iframe src="https://www.tokyvideo.com/br/embed/581087"
             allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
             allowfullscreen frameborder="0" scrolling="no"
             style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
