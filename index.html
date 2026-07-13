@@ -114,6 +114,17 @@
 
 
 
+
+    <!-- Velozes & Furiosos 1 (2001) -->
+<div class="filme">
+  <a href="javascript:void(0)" onclick="abrirVelozesFuriosos1();">
+    <img src="https://raw.githubusercontent.com/airtoncavalcante-dev/cinemaxvideos/main/Velozes%20%26%20Furiosos%201%20(2001)%20400x600.jpg" alt="Velozes & Furiosos 1 (2001)"/>
+  </a>
+</div>
+
+
+
+
         <!-- Titanic 1997 -->
     <div class="filme">
       <a href="javascript:void(0)" onclick="abrirTitanic();">
@@ -355,6 +366,33 @@ document.querySelectorAll('.seta').forEach(el => el.style.display = 'none');
     </iframe>`;
 }
 
+
+
+
+
+
+
+    function abrirVelozesFuriosos1() {
+  // Esconde catálogos
+  document.getElementById('catalogo-filmes').style.display = 'none';
+  document.getElementById('catalogo-series').style.display = 'none';
+
+  // Esconde barras
+  document.getElementById('barra-filmes').style.display = 'none';
+  document.getElementById('barra-series').style.display = 'none';
+
+  // Esconde setas
+  document.querySelectorAll('.seta').forEach(el => el.style.display = 'none');
+
+  // Mostra player
+  document.getElementById('player').style.display = 'block';
+  document.getElementById('player').innerHTML = `
+    <iframe src="https://www.tokyvideo.com/br/embed/840314"
+            allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
+            allowfullscreen frameborder="0" scrolling="no"
+            style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
+    </iframe>`;
+}
 
     
 
