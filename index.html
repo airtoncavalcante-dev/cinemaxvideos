@@ -44,12 +44,7 @@
 
 
 
-    <!-- Invasores 2014 -->
-    <div class="filme">
-      <a href="javascript:void(0)" onclick="abrirInvasores();">
-        <img src="https://raw.githubusercontent.com/airtoncavalcante-dev/cinemaxvideos/refs/heads/main/Hackers%20nenhum%20sistema%20esta%20a%20salvo%20400x600.jpg" alt="Invasores 2014"/>
-      </a>
-    </div>
+ 
 
     <!-- Titanic 1997 -->
     <div class="filme">
@@ -57,6 +52,21 @@
         <img src="Titanic 1997 Capa 400x600.jpg" alt="Titanic (1997)"/>
       </a>
     </div>
+
+       <!-- Invasores 2014 -->
+    <div class="filme">
+      <a href="javascript:void(0)" onclick="abrirInvasores();">
+        <img src="https://raw.githubusercontent.com/airtoncavalcante-dev/cinemaxvideos/refs/heads/main/Hackers%20nenhum%20sistema%20esta%20a%20salvo%20400x600.jpg" alt="Invasores 2014"/>
+      </a>
+    </div>
+
+    <!-- V de Vingança -->
+<div class="filme">
+  <a href="javascript:void(0)" onclick="abrirVdeVinganca();">
+    <img src="https://raw.githubusercontent.com/airtoncavalcante-dev/cinemaxvideos/main/V%20de%20Vinganca%20-%20400x600.png" alt="V de Vingança"/>
+  </a>
+</div>
+
 
     <!-- Matrix 1999 -->
     <div class="filme">
@@ -272,6 +282,31 @@ document.querySelectorAll('.seta').forEach(el => el.style.display = 'none');
   document.getElementById('player').style.display = 'block';
   document.getElementById('player').innerHTML = `
     <iframe src="https://www.tokyvideo.com/br/embed/662417"
+            allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
+            allowfullscreen frameborder="0" scrolling="no"
+            style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
+    </iframe>`;
+}
+
+
+
+
+    function abrirVdeVinganca() {
+  // Esconde catálogos
+  document.getElementById('catalogo-filmes').style.display = 'none';
+  document.getElementById('catalogo-series').style.display = 'none';
+
+  // Esconde barras
+  document.getElementById('barra-filmes').style.display = 'none';
+  document.getElementById('barra-series').style.display = 'none';
+
+  // Esconde setas
+  document.querySelectorAll('.seta').forEach(el => el.style.display = 'none');
+
+  // Mostra player
+  document.getElementById('player').style.display = 'block';
+  document.getElementById('player').innerHTML = `
+    <iframe src="https://www.tokyvideo.com/br/embed/801035"
             allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
             allowfullscreen frameborder="0" scrolling="no"
             style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
