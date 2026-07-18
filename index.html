@@ -47,7 +47,13 @@
 
 
 
- 
+ <!-- Hackers – Piratas de Computador (1995) -->
+<div class="filme">
+  <a href="javascript:void(0)" onclick="abrirHackersPiratas();">
+    <img src="https://raw.githubusercontent.com/airtoncavalcante-dev/cinemaxvideos/main/Hackers%20Piratas%20de%20Computador%20Capa%20400x600.jpg" alt="Hackers – Piratas de Computador"/>
+  </a>
+</div>
+
 
 
 
@@ -301,6 +307,35 @@ document.querySelectorAll('.seta').forEach(el => el.style.display = 'none');
 }
 
 
+
+
+
+    function abrirHackersPiratas() {
+  // Esconde catálogos
+  document.getElementById('catalogo-filmes').style.display = 'none';
+  document.getElementById('catalogo-series').style.display = 'none';
+
+  // Esconde barras
+  document.getElementById('barra-filmes').style.display = 'none';
+  document.getElementById('barra-series').style.display = 'none';
+
+  // Esconde setas
+  document.querySelectorAll('.seta').forEach(el => el.style.display = 'none');
+
+  // Mostra player
+  document.getElementById('player').style.display = 'block';
+  document.getElementById('player').innerHTML = `
+    <iframe src="https://www.tokyvideo.com/br/embed/832542"
+            allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
+            allowfullscreen frameborder="0" scrolling="no"
+            style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
+    </iframe>`;
+}
+
+
+
+
+    
     
 
  function abrirInvasores() {
