@@ -129,6 +129,16 @@
 </div>
 
 
+
+    <!-- 12 herois 2018 -->
+    <div class="filme">
+      <a href="javascript:void(0)" onclick="abrir12herois();">
+        <img src="https://raw.githubusercontent.com/airtoncavalcante-dev/cinemaxvideos/refs/heads/main/12%20herois%20capa%20400x600%20(1).jpg" alt="12 herois 2018"/>
+      </a>
+</div>
+
+    
+
     <!-- À Espera de um Milagre (2000) -->
 <div class="filme">
   <a href="javascript:void(0)" onclick="abrirMilagre();">
@@ -354,6 +364,30 @@ document.querySelectorAll('.seta').forEach(el => el.style.display = 'none');
   document.getElementById('player').style.display = 'block';
   document.getElementById('player').innerHTML = `
     <iframe src="https://www.tokyvideo.com/br/embed/662417"
+            allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
+            allowfullscreen frameborder="0" scrolling="no"
+            style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
+    </iframe>`;
+}
+
+
+
+    function abrir12herois() {
+  // Esconde catálogos
+  document.getElementById('catalogo-filmes').style.display = 'none';
+  document.getElementById('catalogo-series').style.display = 'none';
+
+  // Esconde barras
+  document.getElementById('barra-filmes').style.display = 'none';
+  document.getElementById('barra-series').style.display = 'none';
+
+  // Esconde setas
+  document.querySelectorAll('.seta').forEach(el => el.style.display = 'none');
+
+  // Mostra player
+  document.getElementById('player').style.display = 'block';
+  document.getElementById('player').innerHTML = `
+    <iframe src="https://www.tokyvideo.com/br/embed/592921"
             allow="autoplay *; encrypted-media *; picture-in-picture *; fullscreen *"
             allowfullscreen frameborder="0" scrolling="no"
             style="width:100%;aspect-ratio:16/9;height:auto;max-width:100%;border:0;border-radius:12px;">
